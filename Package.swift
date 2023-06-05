@@ -3,25 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "VLCKit",
+    name: "TVVLCKit",
     platforms: [
-        .macOS(.v10_13),
-        .iOS(.v11),
         .tvOS(.v11)
     ],
     products: [
-        .library(
-            name: "VLCKit",
-            targets: [
-                "VLCKit"
-            ]
-        ),
-        .library(
-            name: "MobileVLCKit",
-            targets: [
-                "MobileVLCKit"
-            ]
-        ),
         .library(
             name: "TVVLCKit",
             targets: [
@@ -32,19 +18,9 @@ let package = Package(
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "VLCKit",
-            url: "",
-            checksum: ""
-        ),
-        .binaryTarget(
-            name: "MobileVLCKit",
-            url: "",
-            checksum: ""
-        ),
-        .binaryTarget(
             name: "TVVLCKit",
-            url: "",
-            checksum: ""
+            url: "https://github.com/LibFRi/TVVLCKit-spm/releases/download/3.6.0b4/TVVLCKit.xcframework.zip",
+            checksum: "61b3ffea0c68a24387026cc85c20cd75b204046e4dc1f68ad462e87218894723"
         )
     ]
 )
